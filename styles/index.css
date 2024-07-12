@@ -1,0 +1,54 @@
+body, html {
+    width: 1920px;
+    margin: 0 auto;
+    /* scroll-behavior: smooth;*/
+    overflow-x: hidden !important; 
+}
+/*고정*/
+nav {
+    position: fixed; z-index: 999;
+    left: 60px; top: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 740px; align-items: center;
+}
+nav a {
+    color: #493D76; font-size: 1rem;
+    letter-spacing: -0.2;
+    padding: 4px 4px;
+}
+nav a:hover {}
+.deco {
+    position: fixed; z-index: 990;
+}
+.deco img {width: 100%;}
+#deco1 {
+    width: 246px; height: 126.73px;
+    top: 36px; right: 38px;
+}
+#deco2 {
+    width: 162px; height: 116.37px;
+    bottom: 36px; left: 38px;
+}
+#deco3 {
+    width: 97px; height: 24.15px;
+    bottom: 35px; right: 38px;
+}
+/*공통*/
+.bg {}
+
+/*cover*/
+.bg #cover {
+    background-image: url(../images/bg001.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.bg #cover h1 {
+    padding-top: 10px; margin: 0 auto;
+    width: 831px; height: 281px;
+}
+.bg #cover h1 img {width: 100%;}
+
+/*main*/
