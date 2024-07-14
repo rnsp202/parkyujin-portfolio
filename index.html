@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>박유진 portfolio</title>
-    <link rel="stylesheet" href="./styles/reset.css">
     <!-- fullpage 플러그인 -->
     <!--fullpage 플러그인(구) 제이쿼리 라이브러리 연결 필수-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -15,59 +14,236 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!--style, js 연결-->
+    <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
     <script src="./scripts/plugin.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
 </head>
 <body>
     <!--고정메뉴-->
     <nav>
-        <a href="profile">소개</a>
-        <a href="sns">sns광고</a>
-        <a href="#">상세페이지</a>
-        <a href="#">카드뉴스</a>
-        <a href="#">랜딩페이지</a>
-        <a href="#">App</a>
-        <a href="#">web</a>
-        <a href="#">ect.</a>
+        <!-- <a href="#cover"></a> -->
+        <a href="#profile">소개</a>
+        <a href="#sns">sns광고</a>
+        <a href="#detail">상세페이지</a>
+        <a href="#cardNews">카드뉴스</a>
+        <a href="#landing">랜딩페이지</a>
+        <a href="#app">App</a>
+        <a href="#web">web</a>
+        <a href="#ect">ect.</a>
     </nav>
+    <!-- <div class="line">
+        <a href="#" class="profile"></a>
+        <a href="#" class="sns"></a>
+        <a href="#" class="detail"></a>
+        <a href="#" class="cardNews"></a>
+        <a href="#" class="landing"></a>
+        <a href="#" class="app"></a>
+        <a href="#" class="web"></a>
+        <a href="#" class="ect"></a>
+    </div> -->
     <p class="deco" id="deco1"><img src="./images/deco01.png" alt=""></p>
     <p class="deco" id="deco2"><img src="./images/deco02.png" alt=""></p>
-    <p class="deco" id="deco3"><img src="./images/deco03_cover.png" alt=""></p>
-    <div class="bg" id="wrap">
+    <p class="deco line" id="deco3">
+        <img src="./images/deco03_cover.png" alt="">
+        <img src="./images/deco03_profile.png" alt="">
+        <img src="./images/deco03_SNS.png" alt="">
+        <img src="./images/deco03_detail.png" alt="">
+        <img src="./images/deco03_card.png" alt="">
+        <img src="./images/deco03_landing.png" alt="">
+        <img src="./images/deco03_app.png" alt="">
+        <img src="./images/deco03_web.png" alt="">
+        <img src="./images/deco03_web.png" alt="">
+        <img src="./images/deco03_ect.png" alt="">
+    </p>
+    <div class="bg"></div>
+    <div id="wrap">
         <div class="section" id="cover">
             <h1><img src="./images/Title.png" alt=""></h1>
         </div>
-        <div class="section" id="profile">
-            <p class="photo"><img src="" alt=""></p>
-            <div class="about">
-                <h2>about me</h2>
-                <div class="txt">
-                    <p><em>Name.</em>박유진</p>
-                    <p><em>Birth.</em>2002년 08월 06일</p>
-                    <p><em>Phone.</em>010 4193 5976</p>
-                    <p><em>Email.</em>eoo333@naver.com</p>
-                </div>
-            </div>
-            <div class="education">
-                <h2>EDUCATION</h2>
-                <div class="txt">
-                    <p><em>2024.03 ~ 2024.08</em>그린컴퓨터아카데미 UI/UX 반응혀 웹디자인&웹퍼블리셔 양성과정 수료</p>
-                    <p><em>2022.03 ~ </em>국민대학교 영상디자인학과 (현재 휴학)</p>
-                </div>
-            </div>
-            <div class="career">
-                <h2>CAREER</h2>
-                <div class="txt">
-                    <p><em>2022.02 ~ 2023.02</em>창조의 아침 디자인 입시 미술학원 강사</p>
-                </div>
-            </div>
-            <div class="skill">
-                <h2>SKILL</h2>
-                <div class="content">
+        <div class="section bg2" id="profile">
+            <div class="contents">
+                <p class="photo"><img src="./images/photo.png" alt=""></p>
+                <div class="prof">
+                    <div class="about">
+                        <h2><img src="./images/About_me.png" alt=""></h2>
+                        <div class="txt">
+                            <p><em>Name.</em>박유진</p>
+                            <p><em>Birth.</em>2002년 08월 06일</p>
+                            <p><em>Phone.</em>010 4193 5976</p>
+                            <p><em>Email.</em>eoo333@naver.com</p>
+                        </div>
+                    </div>
+                    <div class="education">
+                        <h2><img src="./images/Education.png" alt=""></h2>
+                        <div class="txt">
+                            <p><em>2024.03 ~ 2024.08</em>그린컴퓨터아카데미 UI/UX 반응형 웹디자인&웹퍼블리셔 양성과정 수료</p>
+                            <p><em>2022.03 ~ </em>국민대학교 영상디자인학과 (현재 휴학)</p>
+                        </div>
+                    </div>
+                    <div class="career">
+                        <h2><img src="./images/Career.png" alt=""></h2>
+                        <div class="txt">
+                            <p><em>2022.02 ~ 2023.02</em>창조의 아침 디자인 입시 미술학원 강사</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h2><img src="./images/Skill.png" alt=""></h2>
+                        <div class="content">
+                            <div class="skill_img">
+                                <p><img src="./images/skill_Ps.png" alt=""></p>
+                                <p><img src="./images/skill_Ai.png" alt=""></p>
+                                <p><img src="./images/skill_Ae.png" alt=""></p>
+                                <p><img src="./images/skill_davinci.png" alt=""></p>
+                                <p><img src="./images/skill_figma.png" alt=""></p>
+                                <p><img src="./images/skill_html.png" alt=""></p>
+                                <p><img src="./images/skill_css.png" alt=""></p>
+                                <p><img src="./images/skill_js.png" alt=""></p>
+                                <p><img src="./images/skill_unreal5.png" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="section" id="sns"></div>
+        <div class="section bg2" id="sns">
+            <div class="sns">
+                <diw class="swiper"><!--보이는 영역-->
+                    <div class="swiper-wrapper"><!--움직이는 대상-->
+                        <div class="swiper-slide"><img src="./project/design/sns/001.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./project/design/sns/002.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./project/design/sns/003.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./project/design/sns/004.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./project/design/sns/005.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./project/design/sns/006.jpg" alt=""></div>
+                    </div>
+                </diw>
+            </div>
+        </div>
+        <div class="section bg2" id="detail">
+            <div class="detail">
+                <p>클릭하면 크게 볼 수 있어요!</p>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#"><img src="./project/design/detail/001.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="./project/design/detail/002.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!--스와이퍼 클릭시 실행되는 팝업-->
+                <div class="big_bg">
+                    <div class="img"><img src="./project/design/detail/001.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="section bg2" id="cardNews"></div>
+        <div class="section bg2" id="landing">
+            <div class="landing_con">
+                <p class="mokup"><img src="./project/web/landing01.png" alt=""></p>
+                <dl>
+                    <dt>사이트명</dt>
+                    <dd class="dot"><img src="./images/smalldot.png" alt=""></dd>
+                    <dd>DaVinci Resolve 19 소개페이지</dd>
+                    <dt>제작기간</dt>
+                    <dd class="dot"><img src="./images/smalldot.png" alt=""></dd>
+                    <dd>6일, 34시간(개인 100%)</dd>
+                    <dt>PAGE</dt>
+                    <dd class="dot"><img src="./images/smalldot.png" alt=""></dd>
+                    <dd>다빈치 리졸브 19의 새로운 기능과<br>새로운 사용툴 탐색자들을 위한<br>다빈치 리졸브의 놀라운 기능들을<br>안내하는 페이지</dd>
+                    <dt>TOOL</dt>
+                    <dd class="dot"><img src="./images/smalldot.png" alt=""></dd>
+                    <dd>Photoshop, Illust , figma<br>HTML, CSS, jQuery</dd>
+                </dl>
+                <div class="link">
+                    <a href="">figma</a>
+                    <a href="">gitHub</a>
+                    <a href="">최종(Netlify)</a>
+                </div>
+                <p class="webBack"><img src="./images/webBack.png" alt=""></p>
+            </div>
+        </div>
+        <div class="section bg2" id="app">
+            <div class="app_con">
+                <p class="mokup"><img src="" alt=""></p>
+                <dl>
+                    <dt>어플리케이션명</dt>
+                    <dd class="dot"><img src="./images/smalldot.png" alt=""></dd>
+                    <dd>Musium</dd>
+                    <dt>제작기간</dt>
+                    <dd class="dot"><img src="./images/smalldot.png" alt=""></dd>
+                    <dd>2주(팀작업)</dd>
+                    <dt>App</dt>
+                    <dd class="dot"><img src="./images/smalldot.png" alt=""></dd>
+                    <dd>바쁜 생활속에서도 사운드 작업에 필요한<br>소리들을 휴대폰으로 쉽게 찾아보고<br>팀원들과 공유하며 의견을 빠르게 나눌 수<br>있도록 만들어진 어플리케이션</dd>
+                    <dt>참여도</dt>
+                    <dd class="dot"><img src="./images/smalldot.png" alt=""></dd>
+                    <dd>Team 작업, 본인 35%<br>전체 기획, 로고 제작,<br>검색과 마이 페이지 디자인 </dd>
+                    <dt>TOOL</dt>
+                    <dd class="dot"><img src="./images/smalldot.png" alt=""></dd>
+                    <dd>Photoshop, Illust, figma</dd>
+                </dl>
+                <div class="link">
+                    <a href="">figma</a>
+                    <a href="">figma2</a>
+                    <a href="">프로토타입</a>
+                </div>
+                <p class="appBack"><img src="./images/appBack.png" alt=""></p>
+            </div>
+        </div>
+        <div class="section bg2" id="web">
+            <div class="web_con">
+                <p class="mokup"><img src="./project/web/web01.png" alt=""></p>
+                <dl>
+                    <dt>사이트명</dt>
+                    <dd class="dot"><img src="./images/smalldot.png" alt=""></dd>
+                    <dd>The Shilla Shop</dd>
+                    <dt>제작기간</dt>
+                    <dd class="dot"><img src="./images/smalldot.png" alt=""></dd>
+                    <dd>7일, 49시간(개인 100%)</dd>
+                    <dt>PAGE</dt>
+                    <dd class="dot"><img src="./images/smalldot.png" alt=""></dd>
+                    <dd>다빈치 리졸브 19의 새로운 기능과<br>새로운 사용툴 탐색자들을 위한<br>다빈치 리졸브의 놀라운 기능들을<br>안내하는 페이지</dd>
+                    <dt>TOOL</dt>
+                    <dd class="dot"><img src="./images/smalldot.png" alt=""></dd>
+                    <dd>Photoshop, figma<br>HTML, CSS, JavaScript, jQuery</dd>
+                </dl>
+                <div class="link">
+                    <a href="">figma</a>
+                    <a href="">gitHub</a>
+                    <a href="">최종(Netlify)</a>
+                </div>
+                <p class="webBack"><img src="./images/webBack.png" alt=""></p>
+            </div>
+        </div>
+        <div class="section bg2" id="web2">
+            <div class="web_con">
+                <p class="mokup"><img src="./project/web/web01.png" alt=""></p>
+                <dl>
+                    <dt>사이트명</dt>
+                    <dd class="dot"><img src="./images/smalldot.png" alt=""></dd>
+                    <dd>The Shilla Shop</dd>
+                    <dt>제작기간</dt>
+                    <dd class="dot"><img src="./images/smalldot.png" alt=""></dd>
+                    <dd>7일, 49시간(개인 100%)</dd>
+                    <dt>PAGE</dt>
+                    <dd class="dot"><img src="./images/smalldot.png" alt=""></dd>
+                    <dd>다빈치 리졸브 19의 새로운 기능과<br>새로운 사용툴 탐색자들을 위한<br>다빈치 리졸브의 놀라운 기능들을<br>안내하는 페이지</dd>
+                    <dt>TOOL</dt>
+                    <dd class="dot"><img src="./images/smalldot.png" alt=""></dd>
+                    <dd>Photoshop, figma<br>HTML, CSS, JavaScript, jQuery</dd>
+                </dl>
+                <div class="link">
+                    <a href="">figma</a>
+                    <a href="">gitHub</a>
+                    <a href="">최종(Netlify)</a>
+                </div>
+                <p class="webBack"><img src="./images/webBack.png" alt=""></p>
+            </div>
+        </div>
+        <div class="section bg2" id="ect"></div>
     </div><!--bg닫기-->
 </body>
 </html>
