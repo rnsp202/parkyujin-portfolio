@@ -59,10 +59,10 @@ nav a:hover {}
 }
 .bg2 {
     display: block;
-    width: 1800px !important; margin: 0px auto;
+    width: 1820px !important; margin: 0px auto;
     /* height: 100vh; */
     /* border: 1px solid #006eff; */
-    left: -10px;
+    /* left: -10px; */
 }
 
 /*cover*/
