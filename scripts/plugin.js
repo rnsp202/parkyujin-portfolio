@@ -43,6 +43,34 @@ const detailS = new Swiper('.detail .swiper',{
     //반응형 슬라이드 수
 })
 
+//detail swiper
+const card1S = new Swiper('.cardNews01 .swiper',{
+    slidesPerView:1, //한번에 보이는 슬라이드 수
+    spaceBetween:1, //슬라이드 사이 여백
+    autoplay:{delay:2000,},
+    loop:true,
+    speed:1000,
+    freemode:true,
+    navigation:{
+        nextEl:'.cardNews01 .swiper-button-next',
+        prevEl:'.cardNews01 .swiper-button-prev',
+    },
+    //반응형 슬라이드 수
+})
+const card2S = new Swiper('.cardNews02 .swiper',{
+    slidesPerView:1, //한번에 보이는 슬라이드 수
+    spaceBetween:1, //슬라이드 사이 여백
+    autoplay:{delay:2000,},
+    loop:true,
+    speed:1000,
+    freemode:true,
+    navigation:{
+        nextEl:'.cardNews02 .swiper-button-next',
+        prevEl:'.cardNews02 .swiper-button-prev',
+    },
+    //반응형 슬라이드 수
+})
+
 //detail popup
 //1. 팝업 숨기기(big_bg)
 //2. swiper img 클릭 시

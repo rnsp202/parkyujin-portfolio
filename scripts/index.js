@@ -62,15 +62,36 @@ $(window).on('scroll', function() {
             imgIndex = 7;
         }
 
-        if ((index < 7 && bgBottom > windowCenterTop && bgTop < windowCenterBottom) ||
-            (index === 7 && bgBottom > windowCenterTop && bgTop < windowCenterBottom) ||
-            (index === 8 && bgBottom > windowCenterTop && bgTop < windowCenterBottom) ||
-            (index === 9 && bgBottom > windowCenterTop && bgTop < windowCenterBottom)) {
-            btn.eq(imgIndex).addClass('on');  // 특정 클래스 추가
-        } else {
-            btn.eq(imgIndex).removeClass('on');  // 특정 클래스 제거
-            btn.eq(imgIndex).addClass('off');
+        if (index <= 5 || index === 6 || index === 9) {
+            if (bgBottom > windowCenterTop && bgTop < windowCenterBottom) {
+                btn.eq(imgIndex).addClass('on');  // 특정 클래스 추가
+            } else {
+                btn.eq(imgIndex).removeClass('on');  // 특정 클래스 제거
+                btn.eq(imgIndex).addClass('off');
+            }
+        } else if (index === 7 || index === 8) {
+            var bgTop7 = bg.eq(7).offset().top;
+            var bgBottom7 = bgTop7 + bg.eq(7).outerHeight();
+            var bgTop8 = bg.eq(8).offset().top;
+            var bgBottom8 = bgTop8 + bg.eq(8).outerHeight();
+
+            if ((bgBottom7 > windowCenterTop && bgTop7 < windowCenterBottom) ||
+                (bgBottom8 > windowCenterTop && bgTop8 < windowCenterBottom)) {
+                    btn.eq(imgIndex).addClass('on');  // 특정 클래스 추가
+            } else {
+                btn.eq(imgIndex).removeClass('on');  // 특정 클래스 제거
+                btn.eq(imgIndex).addClass('off');
+            }
         }
+        // if ((index < 7 && bgBottom > windowCenterTop && bgTop < windowCenterBottom) ||
+        //     (index === 7 && bgBottom > windowCenterTop && bgTop < windowCenterBottom) ||
+        //     (index === 8 && bgBottom > windowCenterTop && bgTop < windowCenterBottom) ||
+        //     (index === 9 && bgBottom > windowCenterTop && bgTop < windowCenterBottom)) {
+        //     btn.eq(imgIndex).addClass('on');  // 특정 클래스 추가
+        // } else {
+        //     btn.eq(imgIndex).removeClass('on');  // 특정 클래스 제거
+        //     btn.eq(imgIndex).addClass('off');
+        // }
     });
 });
 
