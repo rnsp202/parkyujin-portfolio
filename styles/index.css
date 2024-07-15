@@ -320,7 +320,17 @@ nav a:hover {}
 #landing .landing_con .link a:nth-child(2) {
     background-color: #473788;}
 #landing .landing_con .link a:nth-child(3) {
-    background-color: #2B1B6A;}
+    background-color: #2B1B6A;
+}
+#landing .landing_con > a {
+    position: absolute;
+    top: 258px; right: 296px;
+    padding: 4px 4px 6px 8px;
+    font-weight: 300;
+    /* transform: rotate(90deg); */
+    background-color: #70619D;
+    color: #fff;
+}
 #landing .landing_con .webBack {
     position: absolute;
     top: 225px; right: 295px;
@@ -384,7 +394,16 @@ nav a:hover {}
 #app .app_con .link a:nth-child(2) {
     background-color: #473788;}
 #app .app_con .link a:nth-child(3) {
-    background-color: #2B1B6A;}
+    background-color: #2B1B6A;
+}
+/* #app .app_con > a {
+    position: absolute;
+    top: 270px; right: 196px;
+    padding: 4px 4px 6px 8px;
+    font-weight: 300;
+    background-color: #70619D;
+    color: #fff;
+} */
 #app .app_con .appBack {
     position: absolute;
     top: 185px; left: 252px;
@@ -448,6 +467,15 @@ nav a:hover {}
     background-color: #473788;}
 #web .web_con .link a:nth-child(3) {
     background-color: #2B1B6A;}
+#web .web_con > a {
+    position: absolute;
+    top: 270px; right: 196px;
+    padding: 4px 4px 6px 8px;
+    font-weight: 300;
+    /* transform: rotate(90deg); */
+    background-color: #70619D;
+    color: #fff;
+}
 #web .web_con .webBack {
     position: absolute;
     top: 235px; right: 195px;
@@ -497,7 +525,7 @@ nav a:hover {}
 }
 #web2 .web_con .link {
     position: absolute;
-    top: 656px; right: 400px;
+    top: 656px; right: 358px;
     z-index: 999;
 }
 #web2 .web_con .link a {
