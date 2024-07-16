@@ -278,9 +278,16 @@ nav a:hover {}
     z-index: 30;
 }
 #landing .landing_con .mokup img {}
+#landing .landing_con h2 {
+    position: absolute;
+    top: 320px; right: 450px;
+    width: 346px;
+    font-size: 2rem;
+    font-weight: 500;
+}
 #landing .landing_con dl {
     position: absolute;
-    top: 330px; right: 450px;
+    top: 380px; right: 450px;
     width: 348px;
     display: flex;
     flex-flow: row wrap;
@@ -348,14 +355,21 @@ nav a:hover {}
 }
 #app .app_con .mokup {
     position: absolute;
-    top: 0px; right: 380px;
+    top: 0px; right: 390px;
     z-index: 30;
     height: 100vh;
 }
 #app .app_con .mokup img {height: 100%;}
+#app .app_con h2 {
+    position: absolute;
+    top: 260px; left: 398px;
+    width: 440px;
+    font-size: 2rem;
+    font-weight: 500;
+}
 #app .app_con dl {
     position: absolute;
-    top: 254px; left: 370px;
+    top: 315px; left: 350px;
     width: 440px;
     display: flex;
     flex-flow: row wrap;
@@ -425,9 +439,16 @@ nav a:hover {}
     z-index: 30;
 }
 #web .web_con .mokup img {}
+#web .web_con h2 {
+    position: absolute;
+    top: 340px; right: 348px;
+    width: 346px;
+    font-size: 2rem;
+    font-weight: 500;
+}
 #web .web_con dl {
     position: absolute;
-    top: 330px; right: 350px;
+    top: 400px; right: 350px;
     width: 348px;
     display: flex;
     flex-flow: row wrap;
@@ -453,7 +474,7 @@ nav a:hover {}
 #web .web_con dl dd {
     display: inline-block;
     width: 234px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     line-height: 160%;
 }
 #web .web_con .link {
@@ -498,9 +519,16 @@ nav a:hover {}
     z-index: 30;
 }
 #web2 .web_con .mokup img {}
+#web2 .web_con h2 {
+    position: absolute;
+    top: 350px; right: 342px;
+    width: 346px;
+    font-size: 2rem;
+    font-weight: 500;
+}
 #web2 .web_con dl {
     position: absolute;
-    top: 330px; right: 350px;
+    top: 415px; right: 346px;
     width: 348px;
     display: flex;
     flex-flow: row wrap;
@@ -526,7 +554,7 @@ nav a:hover {}
 #web2 .web_con dl dd {
     display: inline-block;
     width: 234px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     line-height: 160%;
 }
 #web2 .web_con .link {
@@ -578,4 +606,41 @@ nav a:hover {}
     display: inline-block;
     width: 560px;
     margin-bottom: 10px;
+}
+/* 기타3 */
+#last {}
+#last .last {
+    width: 886px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 380px;
+    padding-left: 30px;
+}
+#last .last .kakao {
+    display: inline-block;
+    width: 148px;
+}
+#last .last .kakao img {width: 100%;}
+#last .last .thank {
+    display: inline-block;
+}
+#last .last .thank p {
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 16px;
+}
+#last .last .thank p:first-child {
+    width: 710px; padding-top: 16px;
+}
+#last .last .thank p img {width: 100%;}
+#last .last .thank p em {
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-right: 14px;
+    padding-left: 2px;
 }
