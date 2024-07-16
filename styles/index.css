@@ -163,7 +163,7 @@ nav a:hover {}
     padding-top: 180px;
 }
 #detail .detail .add {
-    width: 100%;
+    width: 1580px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: left;
@@ -179,7 +179,7 @@ nav a:hover {}
 #detail .detail .add p img {}
 #detail .detail .swiper {
     height: 700px;
-    width: 1080px;
+    width: 1500px;
 }
 #detail .detail .swiper .swiper-wrapper {}
 #detail .detail .swiper .swiper-wrapper .swiper-slide {}
@@ -350,7 +350,7 @@ nav a:hover {}
 #app .app_con .mokup img {height: 100%;}
 #app .app_con dl {
     position: absolute;
-    top: 260px; left: 370px;
+    top: 254px; left: 370px;
     width: 440px;
     display: flex;
     flex-flow: row wrap;
@@ -376,7 +376,7 @@ nav a:hover {}
 #app .app_con dl dd {
     display: inline-block;
     width: 280px;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     line-height: 160%;
 }
 #app .app_con .link {

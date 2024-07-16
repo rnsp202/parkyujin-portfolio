@@ -36,7 +36,7 @@ const snsS = new Swiper('.sns .swiper',{
 
 //detail swiper
 const detailS = new Swiper('.detail .swiper',{
-    slidesPerView:2, //한번에 보이는 슬라이드 수
+    slidesPerView:3, //한번에 보이는 슬라이드 수
     spaceBetween:80, //슬라이드 사이 여백
     autoplay:{delay:2000,},
     loop:true,
@@ -81,21 +81,21 @@ const big_img = document.querySelector('.big_bg img')
 console.log(big_bg, detail_img, big_img)
 big_bg.style.display = 'none'
 
-// for(let detail of detail_img){//6개 이미지 반복문 접근
-//     detail.addEventListener('click',(e)=>{
-//         //클릭한 대상에 a 있을 시 스크롤 맨위로 올려버리는 기능 막기
-//         e.preventDefault()
-//         //큰이미지 부모 보이기
-//         big_bg.style.display = 'block'
-//         //팝업 실행 시 body 스크롤 막기
-//         document.body.style.overflow = 'hidden'
-//         //클릭한 이미지의 경로(src)를 큰 이미지 팝업의 src로 대입하기
-//         console.log(detail.src)
-//         big_img.src = detail.src
-//         //이전 팝업에서 내린 스크롤을 기억하지 않도록 항상 스크롤 위로 올리기
-//         big_bg.children[0].scrollTo(0,0)
-//     })
-// }
+for(let detail of detail_img){//6개 이미지 반복문 접근
+    detail.addEventListener('click',(e)=>{
+        //클릭한 대상에 a 있을 시 스크롤 맨위로 올려버리는 기능 막기
+        e.preventDefault()
+        //큰이미지 부모 보이기
+        big_bg.style.display = 'block'
+        //팝업 실행 시 body 스크롤 막기
+        document.body.style.overflow = 'hidden'
+        //클릭한 이미지의 경로(src)를 큰 이미지 팝업의 src로 대입하기
+        console.log(detail.src)
+        big_img.src = detail.src
+        //이전 팝업에서 내린 스크롤을 기억하지 않도록 항상 스크롤 위로 올리기
+        big_bg.children[0].scrollTo(0,0)
+    })
+}
 
 //팝업 출력 시 팝업닫기
 big_bg.addEventListener('click',()=>{
