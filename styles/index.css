@@ -2,7 +2,7 @@ body, html {
     width: 1920px;
     margin: 0 auto;
     /* scroll-behavior: smooth; */
-    overflow-x: hidden !important; 
+    /* overflow-x: hidden !important;  */
 }
 /*고정*/
 nav {
@@ -171,6 +171,7 @@ nav a:hover {}
     margin: 0 auto;
     margin-bottom: 10px;
     padding-left: 40px;
+    z-index: 999;
 }
 #detail .detail .add p {
     display: inline-block;
@@ -308,7 +309,7 @@ nav a:hover {}
 #landing .landing_con .link {
     position: absolute;
     top: 654px; right: 460px;
-    z-index: 999;
+    z-index: 800;
 }
 #landing .landing_con .link a {
     padding: 12px 22px;
@@ -382,7 +383,7 @@ nav a:hover {}
 #app .app_con .link {
     position: absolute;
     top: 680px; left: 370px;
-    z-index: 999;
+    z-index: 800;
 }
 #app .app_con .link a {
     padding: 12px 22px;
@@ -454,7 +455,7 @@ nav a:hover {}
 #web .web_con .link {
     position: absolute;
     top: 680px; right: 330px;
-    z-index: 999;
+    z-index: 800;
 }
 #web .web_con .link a {
     padding: 12px 22px;
@@ -526,7 +527,7 @@ nav a:hover {}
 #web2 .web_con .link {
     position: absolute;
     top: 656px; right: 358px;
-    z-index: 999;
+    z-index: 800;
 }
 #web2 .web_con .link a {
     padding: 12px 22px;
