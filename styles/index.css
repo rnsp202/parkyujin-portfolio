@@ -175,7 +175,10 @@ nav a:hover {}
 }
 #detail .detail .add p {
     display: inline-block;
-    color: #210A7A; font-weight: 500;}
+    color: #210A7A; font-weight: 500;
+    /* overflow: auto;  */
+    /* 팝업 내부 스크롤 활성화 */
+}
 #detail .detail .add p:first-child {margin-right: 10px;}
 #detail .detail .add p img {}
 #detail .detail .swiper {
@@ -331,6 +334,7 @@ nav a:hover {}
     /* transform: rotate(90deg); */
     background-color: #70619D;
     color: #fff;
+    z-index: 850;
 }
 #landing .landing_con .webBack {
     position: absolute;
@@ -476,6 +480,7 @@ nav a:hover {}
     /* transform: rotate(90deg); */
     background-color: #70619D;
     color: #fff;
+    z-index: 850;
 }
 #web .web_con .webBack {
     position: absolute;
@@ -543,4 +548,34 @@ nav a:hover {}
 #web2 .web_con .webBack {
     position: absolute;
     top: 235px; right: 195px;
+}
+/* 기타1 */
+#ect1 {}
+#ect1 .picture {padding-top: 150px;}
+#ect1 .picture .swiper {}
+#ect1 .picture .swiper .swiper-wrapper {transition-timing-function: linear;}
+#ect1 .picture .swiper .swiper-wrapper .swiper-slide {
+    align-self: center;
+    width: 602px;
+}
+#ect1 .picture .swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+}
+/* 기타2 */
+#ect2 {
+    text-align: center;
+}
+#ect2 .video {
+    display: flex;
+    width: 1700px;
+    margin: 0 auto;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 140px;
+}
+#ect2 .video iframe {
+    display: inline-block;
+    width: 560px;
+    margin-bottom: 10px;
 }
